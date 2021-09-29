@@ -1,81 +1,66 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Open Authenticator
+description: An open source TOTP based hardware authenticator using ESP32.
+img: /assets/img/final_build_1.jpg
+github: https://open-authenticator.github.io
+category: hardware
 importance: 1
-category: work
-related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p align="center">
+    <img src="https://open-authenticator.github.io/assets/open-autheticator-logo.png" width="200" height="200">
+</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<p align="center">
+<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/open-authenticator/open-authenticator-app?style=plastic">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/open-authenticator/open-authenticator-app?style=plastic">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/open-authenticator/open-authenticator-app?style=plastic">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/open-authenticator/open-authenticator-app?style=plastic">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/open-authenticator/open-authenticator-app?style=plastic">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/open-authenticator/open-authenticator-app?style=plastic">
+<img alt="GitHub license" src="https://img.shields.io/github/license/open-authenticator/open-authenticator-app?style=plastic">
+</p>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The Open Authenticator is an open source TOTP based hardware authenticator using
+ESP32. In layman's terms, this does what Google Authenticator or Authy does.
+This uses a custom built pcb and a 3d case, also it uses a firmware built for
+this purpose using esp-idf, uses lvgl as the GUI library.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The features of open authenticator's [printer circuit board](https://github.com/Open-Authenticator/hardware-design) are:   
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+* Small form factor of 82mm x 42mm
+* Uses ESP32-WROOM-32D module
+* Uses 128x64 0.96" inch OLED panel
+* Uses DS3231 RTC with battery backup (CR2032) for timekeeping
+* Powered by 3.7V 300 mAh LiPo battery
+* Uses MCP73831 for charging LiPo battery
+* Uses TPS63001 Buck Boost Converter IC for efficient 3.3V power supply, with input range from 1.8V - 5.5V
+* Uses TPS22919 Load switch to control power to OLED and RTC chip
+* Autoselect power source, i.e., battery or USB
+* USB Type-C for charging only (no data pins connected)
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Media Coverage
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+* Hackster.io: [TOTP-Based Open Hardware Authenticator Powered by an ESP32 Microcontroller](https://www.hackster.io/news/totp-based-open-hardware-authenticator-powered-by-an-esp32-microcontroller-c770f10008af)
 
-{% raw %}
+## Project logs
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+* Hackaday: [https://hackaday.io/project/176959-open-authenticator](https://hackaday.io/project/176959-open-authenticator)
 
-{% endraw %}
+## Repositories
+
+* PCB Design: [https://github.com/Open-Authenticator/hardware-design](https://github.com/Open-Authenticator/hardware-design)
+* Firmware: [https://github.com/Open-Authenticator/open-authenticator-app](https://github.com/Open-Authenticator/open-authenticator-app)
+* 3D-Case: [https://github.com/Open-Authenticator/3d-case](https://github.com/Open-Authenticator/3d-case)
+
+
+## Components
+
+* [Bill of Material](https://docs.google.com/spreadsheets/d/1dUZdB7LErKdkV40vjPda2T-85nJA-UcwpFP-PLhwYTE/edit?usp=sharing)
+
+## Sponsors
+
+* [OSHPark](https://oshpark.com/) - Thanks to OSHPark for sponsoring first prototype
+* [PCBWay](https://www.pcbway.com/) - Thanks to PCBway for sponsoring the final prototype
+* [Asahitec](https://www.asahitec.in/index.html) - Thanks for discounts on stencil

@@ -39,7 +39,7 @@ For a quick chat you can reach me out on Matrix [@vedant16:matrix.org](https://m
     <h6 class="title font-weight-bold">{{experience.role}}</h6>
     {% endif %}
     {% if experience.year %}
-    <span class="badge font-weight-bold light-blue">
+    <span class="badge bg-dark font-weight-bold">
         {{ experience.year }}
     </span>
     {% endif %}

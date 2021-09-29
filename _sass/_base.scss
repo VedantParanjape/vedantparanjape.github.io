@@ -687,8 +687,16 @@ footer.sticky-bottom {
   }
 
   .card {
+    background-color: var(--global-bg-color);
+    box-shadow: 0 0 20px var(--global-text-color);
+    border-radius: 10px;
+
     img {
-      width: 100%;
+    border-radius: 10px;
+    width: 100%;
+    }
+    .card-title {
+      color: var(--global-text-color);
     }
   }
 
@@ -699,12 +707,12 @@ footer.sticky-bottom {
   .grid-sizer,
   .grid-item {
     width: 250px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 
   h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
+    border-bottom: 1px solid var(--global-text-color-light);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
