@@ -5,7 +5,7 @@
   - 'Libcamera is an open source camera stack and framework for Linux, Android, and ChromeOS. GStreamer libcamera element allows libcamera to be used in GStreamer pipelines.'
   - 'Enabled GStreamer Libcamera element to support multi streaming on raspberrypi and IPU3 IPA module. Improved testing framework and code coverage by adding unit tests for gstreamer element.'
   - 'Contributed more than 10 patches and around 1000+ Lines of Code. Improved experience of 100s of libcamera users.'
-  - '<b>Report</b>: <a href="https://summerofcode.withgoogle.com/projects/#6332672818806784">https://summerofcode.withgoogle.com/projects/#6332672818806784</a>'
+  - '<b>Report</b>: <a href="https://summerofcode.withgoogle.com/projects/#6332672818806784">summerofcode.withgoogle.com</a>'
 
 - title: Advanced Real-Time Simulation Laboratory (ARS), Carleton University
   year: May 2021- August 2021
@@ -14,7 +14,7 @@
   - 'Cadmium is a framework to describe multiple Discrete-Event Simulation formalisms and has the tools to simulate those models. Modelled sensor-fusion system, using DEVS formalism.'
   - 'The model implements a complementary filter algorithm to fuse readings from gyroscope and accelerometer. To introduce redundancy, it utilizes five IMU sensors, Majority vote algorithm decides an appropriate reading from the five sensors, which is given to the complimentary filter.'
   - 'Simulated this using Cadmium and verified it on STM32 Nucleo-F401R developer kit using mbed-os.'
-  - '<b>Report</b>: <a href="https://drive.google.com/file/d/1e9wVs48T95dMAKHxLRLMfWLH6zLHmqdG/view">https://drive.google.com/file/d/1e9wVs48T95dMAKHxLRLMfWLH6zLHmqdG/view</a>'
+  - '<b>Report</b>: <a href="https://drive.google.com/file/d/1e9wVs48T95dMAKHxLRLMfWLH6zLHmqdG/view">drive.google.com</a>'
 
 - title: BeagleBoard.org @ Google Summer of Code 2020
   year: May 2020- September 2020
@@ -23,7 +23,7 @@
   - 'Created simpPRU, statically typed, compiled language for TI’s am335x PRU(programmable real time unit). Used bison, flex to create parser and lexer, then converted code down to C, rather than ASM. It is being used by 100s of unique users.'
   - 'Syntax, reminiscent of python, eases programming the PRU. Extensively used Linux Kernel’s Remoteproc framework.'
   - 'Distributed via Debian packages, and CI/CD using docker and github actions. Contributed to pru-gcc toolchain, and added support for it on TI AM572x.'
-  - '<b>Report</b>: <a href="https://summerofcode.withgoogle.com/archive/2020/projects/6551712266977280/">https://summerofcode.withgoogle.com/archive/2020/projects/6551712266977280/</a>'
+  - '<b>Report</b>: <a href="https://summerofcode.withgoogle.com/archive/2020/projects/6551712266977280/">summerofcode.withgoogle.com</a>'
 
 - title: Acuradyne
   year: July 2019 - September 2019
