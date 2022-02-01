@@ -16,7 +16,7 @@ social: true  # includes social icons at the bottom of the page
 I am a final year undergraduate student at Veermata Jijabai Technological Institute, majoring in Electronics Engineering. 
 I have been a hardware geek since I was in 8th grade, started off by reading Electronics For you mags in the school library.
 
-I have been working on quite a lot of open source projects since the last 4 years, currently contributing to [PyFive](https://github.com/PyFive-RISC-V), which is a RISC-V libre silicon made using Google PDK, and [kimchi-micro](https://groupgets.com/manufacturers/getlab/products/kimchi-micro), which is open hardware single board computer for the NXP i.MX8M Mini application processor.
+Currently I am working as a Co-Op intern at AMD, India in the Compiler Backend team.
 
 For the past one year I have been working on [Open Authenticator](https://open-authenticator.github.io/) in my free time. It is an open source TOTP based hardware authenticator using ESP32. The beta build is available for sale on [Tindie](https://www.tindie.com/products/vedantvp16/open-authenticator-beta-build/).
 
