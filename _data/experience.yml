@@ -1,5 +1,12 @@
+- title: Robust Scalable Systems Software Lab (RS3), EPFL
+  year: February 2022 - Present
+  role: Research Intern
+  description:
+  - Working on evaluating performance metrics of various hypervisors and figuring out what subsystems cause slowdowns.
+  - Wrote a nano benchmark to measure the VMExits caused due to EPT VIOLATIONS in a virtual machine, tested on KVM so far
+
 - title: Compiler Team, AMD
-  year: January 2022 - Present
+  year: February 2022 - June 2022
   role: Co-Op Intern
   description:
   - 'Working with the backend compiler team on AOCC'
