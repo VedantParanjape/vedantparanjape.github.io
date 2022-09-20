@@ -1,9 +1,15 @@
+- title: Advanced Micro Devices (AMD), India
+  year: September 2022 - Present
+  role: Software Development Engineer 1
+  description:
+  - 'Working with AOCC Compiler Backend and Optimisation Team'
+
 - title: Robust Scalable Systems Software Lab (RS3), EPFL
   year: February 2022 - Present
   role: Research Intern
   description:
-  - Working on evaluating performance metrics of various hypervisors and figuring out what subsystems cause slowdowns.
-  - Wrote a nano benchmark to measure the VMExits caused due to EPT VIOLATIONS in a virtual machine, tested on KVM so far
+  - 'Working on evaluating performance metrics of various hypervisors and figuring out what subsystems cause slowdowns.'
+  - 'Wrote a suite of nano benchmark to measure the cost of virtualization covering VMExits and Schedular Jitter.'
 
 - title: Compiler Team, AMD
   year: February 2022 - June 2022
