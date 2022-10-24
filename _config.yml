@@ -265,13 +265,15 @@ display_categories: ["external-services"] # these categories will be displayed o
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
-# scholar:
+scholar:
 
-#   last_name: Einstein
-#   first_name: [Albert, A.]
+  last_name: Paranjape
+  first_name: [Vedant]
 
-#   style: apa
-#   locale: en
+  style: apa
+  locale: en
+  sort_by: year
+  order: descending
 
   source: /_bibliography/
   bibliography: papers.bib
