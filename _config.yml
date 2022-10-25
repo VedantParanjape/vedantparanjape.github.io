@@ -266,9 +266,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-
   last_name: Paranjape
-  first_name: [Vedant]
+  first_name: ["Vedant"]
 
   style: apa
   locale: en

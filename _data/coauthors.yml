@@ -1,17 +1,20 @@
 "Bhilare":
   - firstname: ["Omkar"]
     url: https://www.omkarbhilare.me/
+    equalauthor: ["deepfake:2022:pdcat"]
 
 "Singh":
   - firstname: ["Rahul"]
     url: https://www.linkedin.com/in/rahul-singh-005965188/
+    equalauthor: ["deepfake:2022:pdcat"]
 
 "Chittupalli":
   - firstname: ["Sravan"]
     url: https://sravanchittupalli.github.io/
+    equalauthor: ["deepfake:2022:pdcat"]
 
 "Suratkar":
   - firstname: ["Shraddha"]
-
+  
 "Kazi":
   - firstname: ["Faruk"]
