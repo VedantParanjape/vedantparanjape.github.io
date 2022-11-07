@@ -33,7 +33,7 @@
   - 'Cadmium is a framework to describe multiple Discrete-Event Simulation formalisms and has the tools to simulate those models. Modelled sensor-fusion system, using DEVS formalism.'
   - 'The model implements a complementary filter algorithm to fuse readings from gyroscope and accelerometer. To introduce redundancy, it utilizes five IMU sensors, Majority vote algorithm decides an appropriate reading from the five sensors, which is given to the complimentary filter.'
   - 'Simulated this using Cadmium and verified it on STM32 Nucleo-F401R developer kit using mbed-os.'
-  - '<b>Report</b>: <a href="https://drive.google.com/file/d/1e9wVs48T95dMAKHxLRLMfWLH6zLHmqdG/view">drive.google.com</a>'
+  - '<b>Report</b>: <a href="https://drive.google.com/file/d/1EpBgqdwt_bk_7zL36yctBuWRf5b1wQDd/view">drive.google.com</a>'
 
 - title: BeagleBoard.org @ Google Summer of Code 2020
   year: May 2020- September 2020
