@@ -2,33 +2,82 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+description: low-level software and hardware tinkering
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: img_profile.jpg
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a final year undergraduate student at Veermata Jijabai Technological Institute, majoring in Electronics Engineering. 
+I have been a hardware geek since I was in 8th grade, started off by reading Electronics For you mags in the school library.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I have been working on quite a lot of open source projects since the last 4 years, currently contributing to [PyFive](https://github.com/PyFive-RISC-V), which is a RISC-V libre silicon made using Google PDK, and [kimchi-micro](https://groupgets.com/manufacturers/getlab/products/kimchi-micro), which is open hardware single board computer for the NXP i.MX8M Mini application processor.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+For the past one year I have been working on [Open Authenticator](https://open-authenticator.github.io/) in my free time. It is an open source TOTP based hardware authenticator using ESP32. The beta build is available for sale on [Tindie](https://www.tindie.com/products/vedantvp16/open-authenticator-beta-build/).
+
+My Research Interests are:
+* Embedded systems
+* Computer Architecture
+* Robotics
+* Linear Algebra
+
+For a quick chat you can reach me out on Matrix [@vedant16:matrix.org](https://matrix.to/#/@vedant16:matrix.org)
+
+# Experience
+
+{% for experience in site.data.experience %}
+<div>
+    {% if experience.title %}
+    <h4 class="title font-weight-bold">{{experience.title}}</h4>
+    {% endif %}
+    {% if experience.role %}
+    <h6 class="title font-weight-bold">{{experience.role}}</h6>
+    {% endif %}
+    {% if experience.year %}
+    <span class="badge font-weight-bold light-blue">
+        {{ experience.year }}
+    </span>
+    {% endif %}
+    {% if experience.description %}
+        <ul class="items">
+            {% for item in experience.description %}
+                <li>
+                    {% if item.contents %}
+                        <span class="item-title">{{ item.title }}</span>
+                        <ul class="subitems">
+                        {% for subitem in item.contents %}
+                            <li><span class="subitem">{{ subitem }}</span></li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        <span class="item">{{ item }}</span>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% if content.items %}
+        <ul class="items">
+            {% for item in content.items %}
+                <li>
+                    {% if item.contents %}
+                        <span class="item-title">{{ item.title }}</span>
+                        <ul class="subitems">
+                        {% for subitem in item.contents %}
+                            <li><span class="subitem">{{ subitem }}</span></li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        <span class="item">{{ item }}</span>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+{% endfor %}
