@@ -1,14 +1,56 @@
 ---
 ---
 
-@inproceedings{deepfake:2022:pdcat,
-  title         = {{DEEPFAKE CLI: Accelerated Deepfake Detection using FPGAs}},
-  author        = {Omkar Bhilare and Rahul Singh and Vedant Paranjape and Sravan Chittupalli and Shraddha Suratkar and Faruk Kazi},
-  booktitle     = {International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT)},
-  abbr          = {PDCAT},
-  year          = {2022},
-  abstract      = {Because of the availability of larger datasets and recent improvements in the generative model, more realistic Deepfake videos are being produced each day. People consume around one billion hours of video on social media platforms every day, and that’s why it is very important to stop the spread of fake videos as they can be damaging, dangerous, and malicious. There has been a significant improvement in the field of deepfake classification, but deepfake detection and inference have remained a difficult task. To solve this problem in this paper, we propose a novel DEEPFAKE C-L-I (Classification – Localization – Inference) in which we have explored the idea of accelerating Quantized Deepfake Detection Models using FPGAs due to their ability of maximum parallelism and energy efficiency compared to generalized GPUs. In this paper, we have used light MesoNet with EFF-YNet structure and accelerated it on VCK5000 FPGA, powered by state-of-the-art VC1902 Versal Architecture which uses AI, DSP, and Adaptable Engines for acceleration. We have benchmarked our inference speed with other state-of-the-art inference nodes, got 316.8 FPS on VCK5000 while maintaining 93% Accuracy.},
-  code          = {https://github.com/DeepYNet/Deepfake_Inference_On_VCK5000},
-  preview       = {deepfake-cli.png},
-  arxiv         = {2210.14743}
+@InProceedings{10.1007/978-3-031-29927-8_4,
+author="Bhilare, Omkar
+and Singh, Rahul
+and Paranjape, Vedant
+and Chittupalli, Sravan
+and Suratkar, Shraddha
+and Kazi, Faruk",
+editor="Takizawa, Hiroyuki
+and Shen, Hong
+and Hanawa, Toshihiro
+and Hyuk Park, Jong
+and Tian, Hui
+and Egawa, Ryusuke",
+title="DEEPFAKE CLI: Accelerated Deepfake Detection Using FPGAs",
+booktitle="Parallel and Distributed Computing, Applications and Technologies",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="45--56",
+abstract="Because of the availability of larger datasets and recent improvements in the generative model, more realistic Deepfake videos are being produced each day. People consume around one billion hours of video on social media platforms every day, and that's why it is very important to stop the spread of fake videos as they can be damaging, dangerous, and malicious. There has been a significant improvement in the field of deepfake classification, but deepfake detection and inference have remained a difficult task. To solve this problem in this paper, we propose a novel DEEPFAKE C-L-I (Classification - Localization - Inference) in which we have explored the idea of accelerating Quantized Deepfake Detection Models using FPGAs due to their ability of maximum parallelism and energy efficiency compared to generalized GPUs. In this paper, we have used light MesoNet with EFF-YNet structure and accelerated it on VCK5000 FPGA, powered by state-of-the-art VC1902 Versal Architecture which uses AI, DSP, and Adaptable Engines for acceleration. We have benchmarked our inference speed with other state-of-the-art inference nodes, got 316.8 FPS on VCK5000 while maintaining 93{\%} Accuracy.",
+isbn="978-3-031-29927-8"
+}
+
+@article{10.1145/3729258,
+author = {Malik, Raghav and Paranjape, Vedant and Kulkarni, Milind},
+title = {Circuit Optimization using Arithmetic Table Lookups},
+year = {2025},
+issue_date = {June 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {9},
+number = {PLDI},
+url = {https://doi.org/10.1145/3729258},
+doi = {10.1145/3729258},
+abstract = {Fully Homomorphic Encryption (FHE) is a cryptographic technique that enables privacy-preserving computation. State-of-the-art Boolean FHE implementations provide a very low-level interface, usually exposing a limited set of Boolean gates that programmers must use to write their FHE applications. This programming model is unnecessarily restrictive: many Boolean FHE schemes support programmable bootstrapping, an operation that allows evaluation of an arbitrary fixed-size lookup table. However, most modern FHE compilers are only capable of reasoning about traditional Boolean circuits, and therefore struggle to take full advantage of programmable bootstrapping. We present COATL, an FHE compiler that makes use of programmable bootstrapping to produce circuits that are smaller and more efficient than their traditional Boolean counterparts. COATL generates circuits using arithmetic lookup tables, a novel abstraction we introduce for reasoning about computations in Boolean FHE programs. We demonstrate on a variety of benchmarks that COATL can generate circuits that run up to 1.5\texttimes{} faster than those generated by other state-of-the-art compilation strategies.},
+journal = {Proc. ACM Program. Lang.},
+month = jun,
+articleno = {159},
+numpages = {23},
+keywords = {Boolean circuits, Compiler optimizations, Homomorphic Encryption, MLIR}
+}
+
+@INPROCEEDINGS{10407940,
+  author={Wainer, Gabriel and Boi-Ukeme, Joseph and Paranjape, Vedant},
+  booktitle={2023 Winter Simulation Conference (WSC)}, 
+  title={Sensor Fusion Devs for Angle Estimation on Inertial Measurement Unit}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={2825-2836},
+  keywords={Accelerometers;Measurement units;Inertial navigation;Sensor fusion;Position measurement;Gyroscopes;Reliability},
+  doi={10.1109/WSC60868.2023.10407940}
 }
