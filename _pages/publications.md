@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 nav: true
 description: <span>*</span> denotes equal contribution and joint lead authorship.
-years: [2023, 2025]
+years: [2025, 2023]
 ---
 <!-- _pages/publications.md -->
 <div class="publications">
