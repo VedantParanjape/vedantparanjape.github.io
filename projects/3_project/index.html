@@ -9,7 +9,7 @@
 <span class="cp">#define COLORED     0
 #define UNCOLORED   1
 </span>
-<span class="k">extern</span> <span class="s">"C"</span> <span class="kt">void</span> <span class="nf">app_main</span><span class="p">()</span> 
+<span class="k">extern</span> <span class="s">"C"</span> <span class="kt">void</span> <span class="nf">app_main</span><span class="p">()</span>
 <span class="p">{</span>
   <span class="n">Epd</span> <span class="n">epd</span><span class="p">;</span>
 
@@ -29,7 +29,7 @@
     <span class="n">paint_</span><span class="p">.</span><span class="n">DrawCharAt</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">Font20</span><span class="p">,</span> <span class="n">COLORED</span><span class="p">);</span>
     <span class="n">epd</span><span class="p">.</span><span class="n">DisplayPart</span><span class="p">(</span><span class="n">frame_</span><span class="p">);</span>
     <span class="n">vTaskDelay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-    <span class="n">d</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span> <span class="mi">20</span><span class="p">;</span> 
+    <span class="n">d</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span> <span class="mi">20</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="n">epd</span><span class="p">.</span><span class="n">Sleep</span><span class="p">();</span>
 <span class="p">}</span>
