@@ -15,15 +15,16 @@ Uses a TCP server to transfer audio files on connection and a UDP server to cont
 `boost-1.65(tested only on version 1.65)`  
 `pyglet`  
 `libavbin`  
-`picoSHA2`  
+`picoSHA2`
 
 ## compile instructions
 
 `cd build`  
 `cmake ..`  
-`make`  
+`make`
 
 the program binaries are generated in /build
+
 ## usage
 
 `./server [filename]`

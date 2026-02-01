@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Making a simple camera streamer with libcamera
-date:   2021-04-04 23:40:16
+date: 2021-04-04 23:40:16
 description: This is a log for documenting issues/observations encountered while creating an Qt app with libcamera
 ---
 
-**I am applying for GSoC again, but this time with libcamera. I will log issues I faced while compiling and running it**    
+**I am applying for GSoC again, but this time with libcamera. I will log issues I faced while compiling and running it**
 
 [Here's the link to the simple camera streamer app made using Qt5 and libcamera](https://github.com/VedantParanjape/libcamera-test-app). I did this for learning more about libcamera in general, and it pretty much cleared libcamera for me.
 
@@ -150,7 +150,7 @@ static void requestComplete(Request *request)
         return;
     }
 
-    // Extract the buffers filled with images from Request object passed by libcamera 
+    // Extract the buffers filled with images from Request object passed by libcamera
     const std::map<const Stream *, FrameBuffer *> &buffers = request->buffers();
 
     // Iterate over the buffer pairs

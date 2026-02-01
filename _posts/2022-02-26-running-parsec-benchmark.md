@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bringing up the parsec-3.0 benchmark
-date:   2022-02-25 12:15:00
+date: 2022-02-25 12:15:00
 description: The parsec benchmark doesn't seem to work out of the box and needs few changes, this post describes those
 ---
 
@@ -11,7 +11,7 @@ The Princeton Application Repository for Shared-Memory Computers (PARSEC) is a b
 
 ## Getting started
 
-* Download the [PARSEC](https://parsec.cs.princeton.edu/index.htm) release 3.0 from here the site
+- Download the [PARSEC](https://parsec.cs.princeton.edu/index.htm) release 3.0 from here the site
 
 <p align="center">
     <a href="http://parsec.cs.princeton.edu/download/3.0/parsec-3.0.tar.gz">
@@ -19,14 +19,15 @@ The Princeton Application Repository for Shared-Memory Computers (PARSEC) is a b
     </a>
 </p>
 
-* Download the tutorial for parsec-3.0 from [here](https://parsec.cs.princeton.edu/download/tutorial/3.0/parsec-tutorial.pdf) or refer to the [wiki](https://parsec.cs.princeton.edu/parsec3-doc.htm) one. The pdf tutorial seems to be hidden off in some corner of the website unfortunately.
+- Download the tutorial for parsec-3.0 from [here](https://parsec.cs.princeton.edu/download/tutorial/3.0/parsec-tutorial.pdf) or refer to the [wiki](https://parsec.cs.princeton.edu/parsec3-doc.htm) one. The pdf tutorial seems to be hidden off in some corner of the website unfortunately.
 
-* Source the env by going into the parsec root directory.
+- Source the env by going into the parsec root directory.
+
   ```
   source env.sh
   ```
 
-* Build all the apps that can be benchmarked
+- Build all the apps that can be benchmarked
   ```
   parsecmgmt -a build -p all -c gcc
   ```
@@ -35,13 +36,13 @@ The Princeton Application Repository for Shared-Memory Computers (PARSEC) is a b
 
 Here are some of the links which helped me solve the issues.
 
-* <https://yulistic.gitlab.io/2016/05/parsec-3.0-installation-issues/>
-* <https://groups.google.com/g/snipersim/c/8q9mjnoePbM>
-* <https://github.com/lutris/ffmpeg-nvenc/issues/5>
+- <https://yulistic.gitlab.io/2016/05/parsec-3.0-installation-issues/>
+- <https://groups.google.com/g/snipersim/c/8q9mjnoePbM>
+- <https://github.com/lutris/ffmpeg-nvenc/issues/5>
 
 The first link is very detailed, please go through that first to check if you encounter any of the above issues. Other than those issues, I have listed the ones I faced.
 
-1) Issue with C++ version
+1. Issue with C++ version
 
 ```bash
 In file included from /home/qfettes/benchmarks/parsec/parsec-2.1/./pkgs/apps/bodytrack/src/TrackingBenchmark/threads/WorkerGroup.cpp:17:0:
@@ -56,12 +57,11 @@ In file included from /home/qfettes/benchmarks/parsec/parsec-2.1/./pkgs/apps/bod
 
 Solution: Add `-std=c++11` to the line `export CXXFLAGS` in the file `config/gcc.bldconf`
 
-
 ```
 export CXXFLAGS="-O3 -g -funroll-loops -fprefetch-loop-arrays -fpermissive -fno-exceptions ${PORTABILITY_FLAGS} -std=c++11"
 ```
 
-2) Issue with compiling x264
+2. Issue with compiling x264
 
 ```bash
 /usr/bin/ld: libx264.a(cabac-a.o): relocation R_X86_64_32 against symbol x264_cabac_range_lps' can not be used when making a shared object; recompile with -fPIC /usr/bin/ld: libx264.a(quant-a.o): relocation R_X86_64_32 against hidden symbolx264_pb_01' can not be used when making a shared object

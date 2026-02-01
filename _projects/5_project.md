@@ -8,7 +8,7 @@ category: hardware
 importance: 5
 ---
 
-PID plotter is a app suite for tuning PID loop on ESP32 devices, it provides a esp-idf component library to communicate with the server. 
+PID plotter is a app suite for tuning PID loop on ESP32 devices, it provides a esp-idf component library to communicate with the server.
 
 Uses TCP sockets to receive control data and UDP sockets to transmit PID data to server.
 
